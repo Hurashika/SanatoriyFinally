@@ -16,7 +16,22 @@ namespace sanatoriy
 
         private void login_TextChanged(object sender, EventArgs e)
         {
-            userLogin = login.Text;
+            userLogin = loginBox.Text;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
