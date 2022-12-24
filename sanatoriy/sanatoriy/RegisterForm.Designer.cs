@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.closeButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.fullnameLabel = new System.Windows.Forms.Label();
             this.emailLabel = new System.Windows.Forms.Label();
@@ -43,7 +44,6 @@
             this.passBox = new System.Windows.Forms.TextBox();
             this.tryPassBox = new System.Windows.Forms.TextBox();
             this.registrationButton = new System.Windows.Forms.Button();
-            this.closeButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +56,21 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(600, 110);
             this.panel1.TabIndex = 0;
+            // 
+            // closeButton
+            // 
+            this.closeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
+            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeButton.Font = new System.Drawing.Font("Times New Roman", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.closeButton.ForeColor = System.Drawing.Color.Brown;
+            this.closeButton.Location = new System.Drawing.Point(550, 0);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(50, 50);
+            this.closeButton.TabIndex = 2;
+            this.closeButton.Text = "X";
+            this.closeButton.UseVisualStyleBackColor = false;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // label1
             // 
@@ -145,6 +160,7 @@
             this.fullnameBox.Name = "fullnameBox";
             this.fullnameBox.Size = new System.Drawing.Size(300, 30);
             this.fullnameBox.TabIndex = 11;
+            this.fullnameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // emailBox
             // 
@@ -153,6 +169,7 @@
             this.emailBox.Name = "emailBox";
             this.emailBox.Size = new System.Drawing.Size(300, 30);
             this.emailBox.TabIndex = 12;
+            this.emailBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // policeBox
             // 
@@ -161,6 +178,7 @@
             this.policeBox.Name = "policeBox";
             this.policeBox.Size = new System.Drawing.Size(300, 30);
             this.policeBox.TabIndex = 13;
+            this.policeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // phoneBox
             // 
@@ -169,6 +187,7 @@
             this.phoneBox.Name = "phoneBox";
             this.phoneBox.Size = new System.Drawing.Size(300, 30);
             this.phoneBox.TabIndex = 14;
+            this.phoneBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // passBox
             // 
@@ -177,6 +196,7 @@
             this.passBox.Name = "passBox";
             this.passBox.Size = new System.Drawing.Size(300, 30);
             this.passBox.TabIndex = 15;
+            this.passBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tryPassBox
             // 
@@ -185,6 +205,7 @@
             this.tryPassBox.Name = "tryPassBox";
             this.tryPassBox.Size = new System.Drawing.Size(300, 30);
             this.tryPassBox.TabIndex = 16;
+            this.tryPassBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // registrationButton
             // 
@@ -197,22 +218,7 @@
             this.registrationButton.Text = "Зарегистрироваться";
             this.registrationButton.UseVisualStyleBackColor = true;
             // 
-            // closeButton
-            // 
-            this.closeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
-            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeButton.Font = new System.Drawing.Font("Times New Roman", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.closeButton.ForeColor = System.Drawing.Color.Brown;
-            this.closeButton.Location = new System.Drawing.Point(550, 0);
-            this.closeButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(50, 50);
-            this.closeButton.TabIndex = 2;
-            this.closeButton.Text = "X";
-            this.closeButton.UseVisualStyleBackColor = false;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // Form2
+            // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -233,7 +239,8 @@
             this.Controls.Add(this.fullnameLabel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form2";
+            this.Location = new System.Drawing.Point(100, 100);
+            this.Name = "RegisterForm";
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

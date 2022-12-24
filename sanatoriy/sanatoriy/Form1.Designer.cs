@@ -39,6 +39,7 @@ namespace sanatoriy
             this.autorisationButton = new System.Windows.Forms.Button();
             this.registrationButton = new System.Windows.Forms.Button();
             this.guestButton = new System.Windows.Forms.Button();
+            this.errorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // authorizationText
@@ -99,6 +100,7 @@ namespace sanatoriy
             this.loginBox.Name = "loginBox";
             this.loginBox.Size = new System.Drawing.Size(300, 30);
             this.loginBox.TabIndex = 4;
+            this.loginBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // passBox
             // 
@@ -107,6 +109,7 @@ namespace sanatoriy
             this.passBox.Name = "passBox";
             this.passBox.Size = new System.Drawing.Size(300, 30);
             this.passBox.TabIndex = 5;
+            this.passBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // autorisationButton
             // 
@@ -142,12 +145,26 @@ namespace sanatoriy
             this.guestButton.UseVisualStyleBackColor = true;
             this.guestButton.Click += new System.EventHandler(this.button3_Click);
             // 
+            // errorLabel
+            // 
+            this.errorLabel.AutoSize = true;
+            this.errorLabel.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.errorLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.errorLabel.Location = new System.Drawing.Point(100, 312);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(399, 96);
+            this.errorLabel.TabIndex = 9;
+            this.errorLabel.Text = "Введённые данные\r\nнекорректны! Повторите ввод\r\nещё раз!";
+            this.errorLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.errorLabel.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(600, 600);
+            this.Controls.Add(this.errorLabel);
             this.Controls.Add(this.guestButton);
             this.Controls.Add(this.registrationButton);
             this.Controls.Add(this.autorisationButton);
@@ -179,5 +196,6 @@ namespace sanatoriy
         private Button autorisationButton;
         private Button registrationButton;
         private Button guestButton;
+        private Label errorLabel;
     }
 }
