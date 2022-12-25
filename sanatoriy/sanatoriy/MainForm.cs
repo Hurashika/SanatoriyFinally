@@ -19,6 +19,7 @@ namespace sanatoriy
             idUser = id;
             InitializeComponent();
             Edit();
+            LoadData();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
