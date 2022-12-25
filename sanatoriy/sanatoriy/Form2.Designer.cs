@@ -81,6 +81,7 @@
             // passBox
             // 
             this.passBox.Location = new System.Drawing.Point(225, 160);
+            this.passBox.MaxLength = 32;
             this.passBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.passBox.Name = "passBox";
             this.passBox.PasswordChar = '*';
@@ -102,6 +103,7 @@
             // newFullnameBox
             // 
             this.newFullnameBox.Location = new System.Drawing.Point(225, 200);
+            this.newFullnameBox.MaxLength = 100;
             this.newFullnameBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.newFullnameBox.Name = "newFullnameBox";
             this.newFullnameBox.Size = new System.Drawing.Size(300, 30);
@@ -158,6 +160,7 @@
             // newEmailBox
             // 
             this.newEmailBox.Location = new System.Drawing.Point(225, 240);
+            this.newEmailBox.MaxLength = 100;
             this.newEmailBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.newEmailBox.Name = "newEmailBox";
             this.newEmailBox.Size = new System.Drawing.Size(300, 30);
@@ -178,6 +181,7 @@
             // newPoliceBox
             // 
             this.newPoliceBox.Location = new System.Drawing.Point(225, 280);
+            this.newPoliceBox.MaxLength = 16;
             this.newPoliceBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.newPoliceBox.Name = "newPoliceBox";
             this.newPoliceBox.Size = new System.Drawing.Size(300, 30);
@@ -200,6 +204,7 @@
             // newPhoneBox
             // 
             this.newPhoneBox.Location = new System.Drawing.Point(225, 320);
+            this.newPhoneBox.MaxLength = 11;
             this.newPhoneBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.newPhoneBox.Name = "newPhoneBox";
             this.newPhoneBox.Size = new System.Drawing.Size(300, 30);
@@ -221,6 +226,7 @@
             // newPassBox
             // 
             this.newPassBox.Location = new System.Drawing.Point(225, 360);
+            this.newPassBox.MaxLength = 32;
             this.newPassBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.newPassBox.Name = "newPassBox";
             this.newPassBox.Size = new System.Drawing.Size(300, 30);

@@ -156,6 +156,7 @@
             // fullnameBox
             // 
             this.fullnameBox.Location = new System.Drawing.Point(225, 136);
+            this.fullnameBox.MaxLength = 100;
             this.fullnameBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.fullnameBox.Name = "fullnameBox";
             this.fullnameBox.Size = new System.Drawing.Size(300, 30);
@@ -165,6 +166,7 @@
             // emailBox
             // 
             this.emailBox.Location = new System.Drawing.Point(225, 176);
+            this.emailBox.MaxLength = 100;
             this.emailBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.emailBox.Name = "emailBox";
             this.emailBox.Size = new System.Drawing.Size(300, 30);
@@ -174,6 +176,7 @@
             // policeBox
             // 
             this.policeBox.Location = new System.Drawing.Point(225, 216);
+            this.policeBox.MaxLength = 16;
             this.policeBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.policeBox.Name = "policeBox";
             this.policeBox.Size = new System.Drawing.Size(300, 30);
@@ -183,6 +186,7 @@
             // phoneBox
             // 
             this.phoneBox.Location = new System.Drawing.Point(225, 274);
+            this.phoneBox.MaxLength = 11;
             this.phoneBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.phoneBox.Name = "phoneBox";
             this.phoneBox.Size = new System.Drawing.Size(300, 30);
@@ -192,6 +196,7 @@
             // passBox
             // 
             this.passBox.Location = new System.Drawing.Point(225, 326);
+            this.passBox.MaxLength = 32;
             this.passBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.passBox.Name = "passBox";
             this.passBox.Size = new System.Drawing.Size(300, 30);
@@ -201,6 +206,7 @@
             // tryPassBox
             // 
             this.tryPassBox.Location = new System.Drawing.Point(225, 379);
+            this.tryPassBox.MaxLength = 32;
             this.tryPassBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.tryPassBox.Name = "tryPassBox";
             this.tryPassBox.PasswordChar = '*';

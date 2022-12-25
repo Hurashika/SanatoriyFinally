@@ -96,6 +96,7 @@ namespace sanatoriy
             // loginBox
             // 
             this.loginBox.Location = new System.Drawing.Point(225, 182);
+            this.loginBox.MaxLength = 100;
             this.loginBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.loginBox.Name = "loginBox";
             this.loginBox.Size = new System.Drawing.Size(300, 30);
@@ -105,6 +106,7 @@ namespace sanatoriy
             // passBox
             // 
             this.passBox.Location = new System.Drawing.Point(225, 241);
+            this.passBox.MaxLength = 32;
             this.passBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.passBox.Name = "passBox";
             this.passBox.PasswordChar = '*';
