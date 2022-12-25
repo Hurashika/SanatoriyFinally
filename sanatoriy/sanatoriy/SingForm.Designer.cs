@@ -76,6 +76,7 @@
             this.policeBox.MaxLength = 16;
             this.policeBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.policeBox.Name = "policeBox";
+            this.policeBox.PlaceholderText = "Введите мед. полис";
             this.policeBox.Size = new System.Drawing.Size(300, 30);
             this.policeBox.TabIndex = 14;
             this.policeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

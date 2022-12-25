@@ -160,6 +160,7 @@
             this.fullnameBox.MaxLength = 100;
             this.fullnameBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.fullnameBox.Name = "fullnameBox";
+            this.fullnameBox.PlaceholderText = "ваше Имя";
             this.fullnameBox.Size = new System.Drawing.Size(300, 30);
             this.fullnameBox.TabIndex = 11;
             this.fullnameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -171,6 +172,7 @@
             this.emailBox.MaxLength = 100;
             this.emailBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.emailBox.Name = "emailBox";
+            this.emailBox.PlaceholderText = "ваш e-mail";
             this.emailBox.Size = new System.Drawing.Size(300, 30);
             this.emailBox.TabIndex = 12;
             this.emailBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -182,6 +184,7 @@
             this.policeBox.MaxLength = 16;
             this.policeBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.policeBox.Name = "policeBox";
+            this.policeBox.PlaceholderText = "ваш полис";
             this.policeBox.Size = new System.Drawing.Size(300, 30);
             this.policeBox.TabIndex = 13;
             this.policeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -193,6 +196,7 @@
             this.phoneBox.MaxLength = 11;
             this.phoneBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.phoneBox.Name = "phoneBox";
+            this.phoneBox.PlaceholderText = "ваш номер";
             this.phoneBox.Size = new System.Drawing.Size(300, 30);
             this.phoneBox.TabIndex = 14;
             this.phoneBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -204,6 +208,7 @@
             this.passBox.MaxLength = 32;
             this.passBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.passBox.Name = "passBox";
+            this.passBox.PlaceholderText = "ваш пароль";
             this.passBox.Size = new System.Drawing.Size(300, 30);
             this.passBox.TabIndex = 15;
             this.passBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -216,6 +221,7 @@
             this.tryPassBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.tryPassBox.Name = "tryPassBox";
             this.tryPassBox.PasswordChar = '*';
+            this.tryPassBox.PlaceholderText = "Повторите пароль";
             this.tryPassBox.Size = new System.Drawing.Size(300, 30);
             this.tryPassBox.TabIndex = 16;
             this.tryPassBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

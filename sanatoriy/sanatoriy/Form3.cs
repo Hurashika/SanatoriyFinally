@@ -16,5 +16,24 @@ namespace sanatoriy
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+            if (e.ClipRectangle.Width == (sender as Panel).Width && e.ClipRectangle.Height == (sender as Panel).Height)
+            {
+                Pen p = new Pen(Brushes.Red, 10);
+                e.Graphics.DrawRectangle(p, e.ClipRectangle);
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

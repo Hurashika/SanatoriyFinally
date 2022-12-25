@@ -111,6 +111,7 @@
             this.priceBox.MaxLength = 32;
             this.priceBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.priceBox.Name = "priceBox";
+            this.priceBox.PlaceholderText = "Укажите цену";
             this.priceBox.Size = new System.Drawing.Size(300, 30);
             this.priceBox.TabIndex = 22;
             this.priceBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

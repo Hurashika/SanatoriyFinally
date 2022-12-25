@@ -100,6 +100,7 @@ namespace sanatoriy
             this.loginBox.MaxLength = 100;
             this.loginBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.loginBox.Name = "loginBox";
+            this.loginBox.PlaceholderText = "Введите ваш email";
             this.loginBox.Size = new System.Drawing.Size(300, 30);
             this.loginBox.TabIndex = 4;
             this.loginBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -112,6 +113,7 @@ namespace sanatoriy
             this.passBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.passBox.Name = "passBox";
             this.passBox.PasswordChar = '*';
+            this.passBox.PlaceholderText = "Введите ваш пароль";
             this.passBox.Size = new System.Drawing.Size(300, 30);
             this.passBox.TabIndex = 5;
             this.passBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

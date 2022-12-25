@@ -55,3 +55,4 @@ C:\Users\egrgh\OneDrive\Desktop\Рабочий каталог\sanatoriy\sanatori
 C:\Users\egrgh\OneDrive\Desktop\Рабочий каталог\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.ChangeForm.resources
 C:\Users\egrgh\OneDrive\Desktop\Рабочий каталог\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.SignForm.resources
 C:\Users\egrgh\OneDrive\Desktop\Рабочий каталог\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.NewServiceform.resources
+C:\Users\egrgh\OneDrive\Desktop\Рабочий каталог\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.Properties.Resources.resources
