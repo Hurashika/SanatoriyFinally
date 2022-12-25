@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace sanatoriy
 {
-    public partial class ChangeForm : Form
+    public partial class Form3 : Form
     {
-        public ChangeForm()
+        public Form3()
         {
             InitializeComponent();
-        }
-
-        private void autorisationButton_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

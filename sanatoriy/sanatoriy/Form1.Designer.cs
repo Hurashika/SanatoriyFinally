@@ -107,6 +107,7 @@ namespace sanatoriy
             this.passBox.Location = new System.Drawing.Point(225, 241);
             this.passBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.passBox.Name = "passBox";
+            this.passBox.PasswordChar = '*';
             this.passBox.Size = new System.Drawing.Size(300, 30);
             this.passBox.TabIndex = 5;
             this.passBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

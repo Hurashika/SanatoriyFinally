@@ -1,6 +1,6 @@
 ﻿namespace sanatoriy
 {
-    partial class NameChangeForm
+    partial class ChangeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -32,10 +32,19 @@
             this.ChangeLabel = new System.Windows.Forms.Label();
             this.passLabel = new System.Windows.Forms.Label();
             this.passBox = new System.Windows.Forms.TextBox();
-            this.fullnameLabel = new System.Windows.Forms.Label();
-            this.fullnameBox = new System.Windows.Forms.TextBox();
+            this.newFullnameLabel = new System.Windows.Forms.Label();
+            this.newFullnameBox = new System.Windows.Forms.TextBox();
             this.changeButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
+            this.infoLabel = new System.Windows.Forms.Label();
+            this.newEmailLabel = new System.Windows.Forms.Label();
+            this.newEmailBox = new System.Windows.Forms.TextBox();
+            this.newPoliceLabel = new System.Windows.Forms.Label();
+            this.newPoliceBox = new System.Windows.Forms.TextBox();
+            this.newPhoneLabel = new System.Windows.Forms.Label();
+            this.newPhoneBox = new System.Windows.Forms.TextBox();
+            this.newPassLabel = new System.Windows.Forms.Label();
+            this.newPassBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +72,7 @@
             this.passLabel.AutoSize = true;
             this.passLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.passLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.passLabel.Location = new System.Drawing.Point(40, 186);
+            this.passLabel.Location = new System.Drawing.Point(40, 160);
             this.passLabel.Name = "passLabel";
             this.passLabel.Size = new System.Drawing.Size(96, 26);
             this.passLabel.TabIndex = 5;
@@ -71,38 +80,39 @@
             // 
             // passBox
             // 
-            this.passBox.Location = new System.Drawing.Point(225, 182);
+            this.passBox.Location = new System.Drawing.Point(225, 160);
             this.passBox.MinimumSize = new System.Drawing.Size(150, 30);
             this.passBox.Name = "passBox";
+            this.passBox.PasswordChar = '*';
             this.passBox.Size = new System.Drawing.Size(300, 30);
             this.passBox.TabIndex = 6;
             this.passBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // fullnameLabel
+            // newFullnameLabel
             // 
-            this.fullnameLabel.AutoSize = true;
-            this.fullnameLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.fullnameLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.fullnameLabel.Location = new System.Drawing.Point(40, 250);
-            this.fullnameLabel.Name = "fullnameLabel";
-            this.fullnameLabel.Size = new System.Drawing.Size(75, 26);
-            this.fullnameLabel.TabIndex = 7;
-            this.fullnameLabel.Text = "ФИО:";
+            this.newFullnameLabel.AutoSize = true;
+            this.newFullnameLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.newFullnameLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.newFullnameLabel.Location = new System.Drawing.Point(40, 200);
+            this.newFullnameLabel.Name = "newFullnameLabel";
+            this.newFullnameLabel.Size = new System.Drawing.Size(75, 26);
+            this.newFullnameLabel.TabIndex = 7;
+            this.newFullnameLabel.Text = "ФИО:";
             // 
-            // fullnameBox
+            // newFullnameBox
             // 
-            this.fullnameBox.Location = new System.Drawing.Point(225, 246);
-            this.fullnameBox.MinimumSize = new System.Drawing.Size(150, 30);
-            this.fullnameBox.Name = "fullnameBox";
-            this.fullnameBox.Size = new System.Drawing.Size(300, 30);
-            this.fullnameBox.TabIndex = 12;
-            this.fullnameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.newFullnameBox.Location = new System.Drawing.Point(225, 200);
+            this.newFullnameBox.MinimumSize = new System.Drawing.Size(150, 30);
+            this.newFullnameBox.Name = "newFullnameBox";
+            this.newFullnameBox.Size = new System.Drawing.Size(300, 30);
+            this.newFullnameBox.TabIndex = 12;
+            this.newFullnameBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // changeButton
             // 
             this.changeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.changeButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.changeButton.Location = new System.Drawing.Point(334, 437);
+            this.changeButton.Location = new System.Drawing.Point(350, 441);
             this.changeButton.Name = "changeButton";
             this.changeButton.Size = new System.Drawing.Size(200, 50);
             this.changeButton.TabIndex = 13;
@@ -121,21 +131,126 @@
             this.closeButton.Text = "Отмена";
             this.closeButton.UseVisualStyleBackColor = true;
             // 
-            // Form2
+            // infoLabel
+            // 
+            this.infoLabel.AutoSize = true;
+            this.infoLabel.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.infoLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.infoLabel.Location = new System.Drawing.Point(66, 113);
+            this.infoLabel.Name = "infoLabel";
+            this.infoLabel.Size = new System.Drawing.Size(502, 36);
+            this.infoLabel.TabIndex = 15;
+            this.infoLabel.Text = "Если вы что-то не хотите менять, ничего не пишите в ненужном поле.\r\nВвод пароля о" +
+    "бязателен.";
+            this.infoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // newEmailLabel
+            // 
+            this.newEmailLabel.AutoSize = true;
+            this.newEmailLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.newEmailLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.newEmailLabel.Location = new System.Drawing.Point(40, 240);
+            this.newEmailLabel.Name = "newEmailLabel";
+            this.newEmailLabel.Size = new System.Drawing.Size(80, 26);
+            this.newEmailLabel.TabIndex = 17;
+            this.newEmailLabel.Text = "e-mail:";
+            // 
+            // newEmailBox
+            // 
+            this.newEmailBox.Location = new System.Drawing.Point(225, 240);
+            this.newEmailBox.MinimumSize = new System.Drawing.Size(150, 30);
+            this.newEmailBox.Name = "newEmailBox";
+            this.newEmailBox.Size = new System.Drawing.Size(300, 30);
+            this.newEmailBox.TabIndex = 18;
+            this.newEmailBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // newPoliceLabel
+            // 
+            this.newPoliceLabel.AutoSize = true;
+            this.newPoliceLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.newPoliceLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.newPoliceLabel.Location = new System.Drawing.Point(40, 280);
+            this.newPoliceLabel.Name = "newPoliceLabel";
+            this.newPoliceLabel.Size = new System.Drawing.Size(136, 26);
+            this.newPoliceLabel.TabIndex = 19;
+            this.newPoliceLabel.Text = "Мед. Полис:";
+            // 
+            // newPoliceBox
+            // 
+            this.newPoliceBox.Location = new System.Drawing.Point(225, 280);
+            this.newPoliceBox.MinimumSize = new System.Drawing.Size(150, 30);
+            this.newPoliceBox.Name = "newPoliceBox";
+            this.newPoliceBox.Size = new System.Drawing.Size(300, 30);
+            this.newPoliceBox.TabIndex = 20;
+            this.newPoliceBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // newPhoneLabel
+            // 
+            this.newPhoneLabel.AutoSize = true;
+            this.newPhoneLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.newPhoneLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.newPhoneLabel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.newPhoneLabel.Location = new System.Drawing.Point(40, 320);
+            this.newPhoneLabel.Name = "newPhoneLabel";
+            this.newPhoneLabel.Size = new System.Drawing.Size(104, 26);
+            this.newPhoneLabel.TabIndex = 21;
+            this.newPhoneLabel.Text = "Телефон:";
+            this.newPhoneLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // newPhoneBox
+            // 
+            this.newPhoneBox.Location = new System.Drawing.Point(225, 320);
+            this.newPhoneBox.MinimumSize = new System.Drawing.Size(150, 30);
+            this.newPhoneBox.Name = "newPhoneBox";
+            this.newPhoneBox.Size = new System.Drawing.Size(300, 30);
+            this.newPhoneBox.TabIndex = 22;
+            this.newPhoneBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // newPassLabel
+            // 
+            this.newPassLabel.AutoSize = true;
+            this.newPassLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.newPassLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.newPassLabel.Location = new System.Drawing.Point(40, 360);
+            this.newPassLabel.Name = "newPassLabel";
+            this.newPassLabel.Size = new System.Drawing.Size(165, 26);
+            this.newPassLabel.TabIndex = 23;
+            this.newPassLabel.Text = "Новый пароль:";
+            this.newPassLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // newPassBox
+            // 
+            this.newPassBox.Location = new System.Drawing.Point(225, 360);
+            this.newPassBox.MinimumSize = new System.Drawing.Size(150, 30);
+            this.newPassBox.Name = "newPassBox";
+            this.newPassBox.Size = new System.Drawing.Size(300, 30);
+            this.newPassBox.TabIndex = 24;
+            this.newPassBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // ChangeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(600, 600);
+            this.Controls.Add(this.newPassBox);
+            this.Controls.Add(this.newPassLabel);
+            this.Controls.Add(this.newPhoneBox);
+            this.Controls.Add(this.newPhoneLabel);
+            this.Controls.Add(this.newPoliceBox);
+            this.Controls.Add(this.newPoliceLabel);
+            this.Controls.Add(this.newEmailBox);
+            this.Controls.Add(this.newEmailLabel);
+            this.Controls.Add(this.infoLabel);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.changeButton);
-            this.Controls.Add(this.fullnameBox);
-            this.Controls.Add(this.fullnameLabel);
+            this.Controls.Add(this.newFullnameBox);
+            this.Controls.Add(this.newFullnameLabel);
             this.Controls.Add(this.passBox);
             this.Controls.Add(this.passLabel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form2";
+            this.Name = "ChangeForm";
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -150,9 +265,18 @@
         private Label ChangeLabel;
         private Label passLabel;
         private TextBox passBox;
-        private Label fullnameLabel;
-        private TextBox fullnameBox;
+        private Label newFullnameLabel;
+        private TextBox newFullnameBox;
         private Button changeButton;
         private Button closeButton;
+        private Label infoLabel;
+        private Label newEmailLabel;
+        private TextBox newEmailBox;
+        private Label newPoliceLabel;
+        private TextBox newPoliceBox;
+        private Label newPhoneLabel;
+        private TextBox newPhoneBox;
+        private Label newPassLabel;
+        private TextBox newPassBox;
     }
 }
