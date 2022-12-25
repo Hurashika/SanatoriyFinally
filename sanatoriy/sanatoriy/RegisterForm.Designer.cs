@@ -155,6 +155,7 @@
             // 
             // fullnameBox
             // 
+            this.fullnameBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.fullnameBox.Location = new System.Drawing.Point(225, 136);
             this.fullnameBox.MaxLength = 100;
             this.fullnameBox.MinimumSize = new System.Drawing.Size(150, 30);
@@ -165,6 +166,7 @@
             // 
             // emailBox
             // 
+            this.emailBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.emailBox.Location = new System.Drawing.Point(225, 176);
             this.emailBox.MaxLength = 100;
             this.emailBox.MinimumSize = new System.Drawing.Size(150, 30);
@@ -175,6 +177,7 @@
             // 
             // policeBox
             // 
+            this.policeBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.policeBox.Location = new System.Drawing.Point(225, 216);
             this.policeBox.MaxLength = 16;
             this.policeBox.MinimumSize = new System.Drawing.Size(150, 30);
@@ -185,6 +188,7 @@
             // 
             // phoneBox
             // 
+            this.phoneBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.phoneBox.Location = new System.Drawing.Point(225, 274);
             this.phoneBox.MaxLength = 11;
             this.phoneBox.MinimumSize = new System.Drawing.Size(150, 30);
@@ -195,6 +199,7 @@
             // 
             // passBox
             // 
+            this.passBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.passBox.Location = new System.Drawing.Point(225, 326);
             this.passBox.MaxLength = 32;
             this.passBox.MinimumSize = new System.Drawing.Size(150, 30);
@@ -205,6 +210,7 @@
             // 
             // tryPassBox
             // 
+            this.tryPassBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tryPassBox.Location = new System.Drawing.Point(225, 379);
             this.tryPassBox.MaxLength = 32;
             this.tryPassBox.MinimumSize = new System.Drawing.Size(150, 30);

@@ -95,6 +95,7 @@ namespace sanatoriy
             // 
             // loginBox
             // 
+            this.loginBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.loginBox.Location = new System.Drawing.Point(225, 182);
             this.loginBox.MaxLength = 100;
             this.loginBox.MinimumSize = new System.Drawing.Size(150, 30);
@@ -105,6 +106,7 @@ namespace sanatoriy
             // 
             // passBox
             // 
+            this.passBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.passBox.Location = new System.Drawing.Point(225, 241);
             this.passBox.MaxLength = 32;
             this.passBox.MinimumSize = new System.Drawing.Size(150, 30);

@@ -1,6 +1,6 @@
 ﻿namespace sanatoriy
 {
-    partial class SignForm
+    partial class NewServiceform
     {
         /// <summary>
         /// Required designer variable.
@@ -30,12 +30,12 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.SignLabel = new System.Windows.Forms.Label();
-            this.policeLabel = new System.Windows.Forms.Label();
-            this.policeBox = new System.Windows.Forms.TextBox();
-            this.infoLabel = new System.Windows.Forms.Label();
             this.cancelButton = new System.Windows.Forms.Button();
             this.SignButton = new System.Windows.Forms.Button();
-            this.serviceInfoLabel = new System.Windows.Forms.Label();
+            this.priceLabel = new System.Windows.Forms.Label();
+            this.descriptionLabel = new System.Windows.Forms.Label();
+            this.priceBox = new System.Windows.Forms.TextBox();
+            this.descriptionRichBox = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +46,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(600, 110);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 3;
             // 
             // SignLabel
             // 
@@ -54,52 +54,19 @@
             this.SignLabel.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.SignLabel.Location = new System.Drawing.Point(145, 32);
             this.SignLabel.Name = "SignLabel";
-            this.SignLabel.Size = new System.Drawing.Size(309, 46);
+            this.SignLabel.Size = new System.Drawing.Size(315, 46);
             this.SignLabel.TabIndex = 0;
-            this.SignLabel.Text = "Запись на услугу";
-            // 
-            // policeLabel
-            // 
-            this.policeLabel.AutoSize = true;
-            this.policeLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.policeLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.policeLabel.Location = new System.Drawing.Point(42, 261);
-            this.policeLabel.Name = "policeLabel";
-            this.policeLabel.Size = new System.Drawing.Size(136, 26);
-            this.policeLabel.TabIndex = 7;
-            this.policeLabel.Text = "Мед. Полис:";
-            // 
-            // policeBox
-            // 
-            this.policeBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.policeBox.Location = new System.Drawing.Point(225, 261);
-            this.policeBox.MaxLength = 16;
-            this.policeBox.MinimumSize = new System.Drawing.Size(150, 30);
-            this.policeBox.Name = "policeBox";
-            this.policeBox.Size = new System.Drawing.Size(300, 30);
-            this.policeBox.TabIndex = 14;
-            this.policeBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // infoLabel
-            // 
-            this.infoLabel.AutoSize = true;
-            this.infoLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.infoLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.infoLabel.Location = new System.Drawing.Point(69, 135);
-            this.infoLabel.Name = "infoLabel";
-            this.infoLabel.Size = new System.Drawing.Size(462, 52);
-            this.infoLabel.TabIndex = 15;
-            this.infoLabel.Text = "Чтобы записаться на услугу, пожалуйста, \r\nвведите Медицинский Полис";
-            this.infoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SignLabel.Text = "Добавить услугу";
+            this.SignLabel.Click += new System.EventHandler(this.SignLabel_Click);
             // 
             // cancelButton
             // 
             this.cancelButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cancelButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cancelButton.Location = new System.Drawing.Point(42, 481);
+            this.cancelButton.Location = new System.Drawing.Point(50, 481);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(200, 50);
-            this.cancelButton.TabIndex = 16;
+            this.cancelButton.TabIndex = 17;
             this.cancelButton.Text = "Отмена";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
@@ -107,39 +74,72 @@
             // 
             this.SignButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SignButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SignButton.Location = new System.Drawing.Point(365, 481);
+            this.SignButton.Location = new System.Drawing.Point(350, 481);
             this.SignButton.Name = "SignButton";
             this.SignButton.Size = new System.Drawing.Size(200, 50);
-            this.SignButton.TabIndex = 17;
+            this.SignButton.TabIndex = 18;
             this.SignButton.Text = "Записаться";
             this.SignButton.UseVisualStyleBackColor = true;
             // 
-            // serviceInfoLabel
+            // priceLabel
             // 
-            this.serviceInfoLabel.AutoSize = true;
-            this.serviceInfoLabel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.serviceInfoLabel.Location = new System.Drawing.Point(145, 375);
-            this.serviceInfoLabel.Name = "serviceInfoLabel";
-            this.serviceInfoLabel.Size = new System.Drawing.Size(337, 17);
-            this.serviceInfoLabel.TabIndex = 18;
-            this.serviceInfoLabel.Text = "\"Здесь можно вывести информацию о самой услуге\"";
+            this.priceLabel.AutoSize = true;
+            this.priceLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.priceLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.priceLabel.Location = new System.Drawing.Point(50, 161);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(73, 26);
+            this.priceLabel.TabIndex = 19;
+            this.priceLabel.Text = "Цена:";
+            this.priceLabel.Click += new System.EventHandler(this.passLabel_Click);
             // 
-            // SignForm
+            // descriptionLabel
+            // 
+            this.descriptionLabel.AutoSize = true;
+            this.descriptionLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.descriptionLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.descriptionLabel.Location = new System.Drawing.Point(50, 213);
+            this.descriptionLabel.Name = "descriptionLabel";
+            this.descriptionLabel.Size = new System.Drawing.Size(119, 26);
+            this.descriptionLabel.TabIndex = 20;
+            this.descriptionLabel.Text = "Описание:";
+            // 
+            // priceBox
+            // 
+            this.priceBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.priceBox.Location = new System.Drawing.Point(229, 161);
+            this.priceBox.MaxLength = 32;
+            this.priceBox.MinimumSize = new System.Drawing.Size(150, 30);
+            this.priceBox.Name = "priceBox";
+            this.priceBox.Size = new System.Drawing.Size(300, 30);
+            this.priceBox.TabIndex = 22;
+            this.priceBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // descriptionRichBox
+            // 
+            this.descriptionRichBox.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.descriptionRichBox.Location = new System.Drawing.Point(229, 213);
+            this.descriptionRichBox.Name = "descriptionRichBox";
+            this.descriptionRichBox.Size = new System.Drawing.Size(300, 230);
+            this.descriptionRichBox.TabIndex = 24;
+            this.descriptionRichBox.Text = "";
+            // 
+            // NewServiceform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(600, 600);
-            this.Controls.Add(this.serviceInfoLabel);
+            this.Controls.Add(this.descriptionRichBox);
+            this.Controls.Add(this.priceBox);
+            this.Controls.Add(this.descriptionLabel);
+            this.Controls.Add(this.priceLabel);
             this.Controls.Add(this.SignButton);
             this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.infoLabel);
-            this.Controls.Add(this.policeBox);
-            this.Controls.Add(this.policeLabel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SignForm";
-            this.Text = "SingForm";
+            this.Name = "NewServiceform";
+            this.Text = "NewServiceform";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -151,11 +151,11 @@
 
         private Panel panel1;
         private Label SignLabel;
-        private Label policeLabel;
-        private TextBox policeBox;
-        private Label infoLabel;
         private Button cancelButton;
         private Button SignButton;
-        private Label serviceInfoLabel;
+        private Label priceLabel;
+        private Label descriptionLabel;
+        private TextBox priceBox;
+        private RichTextBox descriptionRichBox;
     }
 }

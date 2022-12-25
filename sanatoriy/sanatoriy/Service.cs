@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace sanatoriy
 {
+    // надо добавить в структуру Услуги список врач-время и записавшийся-время для работы программы
     internal class Service
     {
-        string schedule;
+        string schedule; // убрать, заменив на словарь врач-время и записавшийся-время  
         string price;
         string description;
         public string Schedule { get { return schedule; } set { Schedule = value; } }

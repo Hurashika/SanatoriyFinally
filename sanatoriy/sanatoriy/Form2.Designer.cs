@@ -35,7 +35,7 @@
             this.newFullnameLabel = new System.Windows.Forms.Label();
             this.newFullnameBox = new System.Windows.Forms.TextBox();
             this.changeButton = new System.Windows.Forms.Button();
-            this.closeButton = new System.Windows.Forms.Button();
+            this.cancelButton = new System.Windows.Forms.Button();
             this.infoLabel = new System.Windows.Forms.Label();
             this.newEmailLabel = new System.Windows.Forms.Label();
             this.newEmailBox = new System.Windows.Forms.TextBox();
@@ -80,6 +80,7 @@
             // 
             // passBox
             // 
+            this.passBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.passBox.Location = new System.Drawing.Point(225, 160);
             this.passBox.MaxLength = 32;
             this.passBox.MinimumSize = new System.Drawing.Size(150, 30);
@@ -102,6 +103,7 @@
             // 
             // newFullnameBox
             // 
+            this.newFullnameBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.newFullnameBox.Location = new System.Drawing.Point(225, 200);
             this.newFullnameBox.MaxLength = 100;
             this.newFullnameBox.MinimumSize = new System.Drawing.Size(150, 30);
@@ -122,16 +124,16 @@
             this.changeButton.UseVisualStyleBackColor = true;
             this.changeButton.Click += new System.EventHandler(this.autorisationButton_Click);
             // 
-            // closeButton
+            // cancelButton
             // 
-            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.closeButton.Location = new System.Drawing.Point(50, 441);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(200, 50);
-            this.closeButton.TabIndex = 14;
-            this.closeButton.Text = "Отмена";
-            this.closeButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cancelButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cancelButton.Location = new System.Drawing.Point(50, 441);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(200, 50);
+            this.cancelButton.TabIndex = 14;
+            this.cancelButton.Text = "Отмена";
+            this.cancelButton.UseVisualStyleBackColor = true;
             // 
             // infoLabel
             // 
@@ -159,6 +161,7 @@
             // 
             // newEmailBox
             // 
+            this.newEmailBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.newEmailBox.Location = new System.Drawing.Point(225, 240);
             this.newEmailBox.MaxLength = 100;
             this.newEmailBox.MinimumSize = new System.Drawing.Size(150, 30);
@@ -180,6 +183,7 @@
             // 
             // newPoliceBox
             // 
+            this.newPoliceBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.newPoliceBox.Location = new System.Drawing.Point(225, 280);
             this.newPoliceBox.MaxLength = 16;
             this.newPoliceBox.MinimumSize = new System.Drawing.Size(150, 30);
@@ -203,6 +207,7 @@
             // 
             // newPhoneBox
             // 
+            this.newPhoneBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.newPhoneBox.Location = new System.Drawing.Point(225, 320);
             this.newPhoneBox.MaxLength = 11;
             this.newPhoneBox.MinimumSize = new System.Drawing.Size(150, 30);
@@ -225,6 +230,7 @@
             // 
             // newPassBox
             // 
+            this.newPassBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.newPassBox.Location = new System.Drawing.Point(225, 360);
             this.newPassBox.MaxLength = 32;
             this.newPassBox.MinimumSize = new System.Drawing.Size(150, 30);
@@ -248,7 +254,7 @@
             this.Controls.Add(this.newEmailBox);
             this.Controls.Add(this.newEmailLabel);
             this.Controls.Add(this.infoLabel);
-            this.Controls.Add(this.closeButton);
+            this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.changeButton);
             this.Controls.Add(this.newFullnameBox);
             this.Controls.Add(this.newFullnameLabel);
@@ -274,7 +280,7 @@
         private Label newFullnameLabel;
         private TextBox newFullnameBox;
         private Button changeButton;
-        private Button closeButton;
+        private Button cancelButton;
         private Label infoLabel;
         private Label newEmailLabel;
         private TextBox newEmailBox;
