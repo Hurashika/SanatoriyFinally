@@ -57,3 +57,29 @@ C:\Users\egrgh\OneDrive\Desktop\Рабочий каталог\sanatoriy\sanatori
 C:\Users\egrgh\OneDrive\Desktop\Рабочий каталог\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.NewServiceform.resources
 C:\Users\egrgh\OneDrive\Desktop\Рабочий каталог\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.Properties.Resources.resources
 C:\Users\egrgh\OneDrive\Desktop\Рабочий каталог\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.ServiceForm.resources
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\bin\Debug\net6.0-windows\sanatoriy.exe
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\bin\Debug\net6.0-windows\sanatoriy.deps.json
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\bin\Debug\net6.0-windows\sanatoriy.runtimeconfig.json
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\bin\Debug\net6.0-windows\sanatoriy.dll
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\bin\Debug\net6.0-windows\sanatoriy.pdb
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.csproj.AssemblyReference.cache
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.ChangeForm.resources
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.LoginForm.resources
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.MainForm.resources
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.NewServiceform.resources
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.Properties.Resources.resources
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.RegisterForm.resources
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.ServiceForm.resources
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.SignForm.resources
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.csproj.GenerateResource.cache
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.AssemblyInfoInputs.cache
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.AssemblyInfo.cs
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.csproj.CoreCompileInputs.cache
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.dll
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\refint\sanatoriy.dll
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.pdb
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.genruntimeconfig.cache
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\ref\sanatoriy.dll
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\bin\Debug\net6.0-windows\MySqlConnector.dll
+C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.csproj.CopyComplete

@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace sanatoriy
 {
-    public partial class Form3 : Form
+    public partial class MainForm : Form
     {
-        public Form3()
+        long idUser;
+        string roleUser;
+        public MainForm(long id)
         {
+            idUser = id;
             InitializeComponent();
+            Edit();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -32,6 +36,26 @@ namespace sanatoriy
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void offButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fullNameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void profileButton_Click(object sender, EventArgs e)
         {
 
         }
