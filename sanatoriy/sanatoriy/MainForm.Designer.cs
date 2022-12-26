@@ -34,6 +34,8 @@ namespace sanatoriy
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.servicesPanel = new System.Windows.Forms.Panel();
+            this.dataService = new System.Windows.Forms.DataGridView();
+            this.ButtonColumn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.roleLabel = new System.Windows.Forms.Label();
             this.fullNameLabel = new System.Windows.Forms.Label();
@@ -43,15 +45,15 @@ namespace sanatoriy
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.addServiceButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataService = new System.Windows.Forms.DataGridView();
             this.servicesPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataService)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataService)).BeginInit();
             this.SuspendLayout();
             // 
             // servicesPanel
@@ -64,6 +66,26 @@ namespace sanatoriy
             this.servicesPanel.Name = "servicesPanel";
             this.servicesPanel.Size = new System.Drawing.Size(1119, 404);
             this.servicesPanel.TabIndex = 0;
+            // 
+            // dataService
+            // 
+            this.dataService.AllowUserToAddRows = false;
+            this.dataService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataService.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ButtonColumn});
+            this.dataService.Location = new System.Drawing.Point(0, 0);
+            this.dataService.Name = "dataService";
+            this.dataService.ReadOnly = true;
+            this.dataService.RowTemplate.Height = 40;
+            this.dataService.Size = new System.Drawing.Size(1106, 842);
+            this.dataService.TabIndex = 0;
+            this.dataService.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataService_CellContentClick);
+            // 
+            // ButtonColumn
+            // 
+            this.ButtonColumn.HeaderText = "";
+            this.ButtonColumn.Name = "ButtonColumn";
+            this.ButtonColumn.ReadOnly = true;
             // 
             // panel2
             // 
@@ -99,7 +121,6 @@ namespace sanatoriy
             this.fullNameLabel.Size = new System.Drawing.Size(244, 22);
             this.fullNameLabel.TabIndex = 27;
             this.fullNameLabel.Text = "\"Имя Фамилия Отчество\"";
-            this.fullNameLabel.Click += new System.EventHandler(this.fullNameLabel_Click);
             // 
             // profileButton
             // 
@@ -166,6 +187,7 @@ namespace sanatoriy
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.addServiceButton);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -176,6 +198,16 @@ namespace sanatoriy
             this.panel4.TabIndex = 2;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
+            // addServiceButton
+            // 
+            this.addServiceButton.Location = new System.Drawing.Point(821, 14);
+            this.addServiceButton.Name = "addServiceButton";
+            this.addServiceButton.Size = new System.Drawing.Size(75, 23);
+            this.addServiceButton.TabIndex = 3;
+            this.addServiceButton.Text = "button1";
+            this.addServiceButton.UseVisualStyleBackColor = true;
+            this.addServiceButton.Click += new System.EventHandler(this.addServiceButton_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -185,7 +217,6 @@ namespace sanatoriy
             this.label3.Size = new System.Drawing.Size(384, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Надо бы админу дать список пользователей, чтобы он им роли менял";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -196,15 +227,6 @@ namespace sanatoriy
             this.label2.Size = new System.Drawing.Size(224, 36);
             this.label2.TabIndex = 2;
             this.label2.Text = "Список Услуг";
-            // 
-            // dataService
-            // 
-            this.dataService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataService.Location = new System.Drawing.Point(0, 0);
-            this.dataService.Name = "dataService";
-            this.dataService.RowTemplate.Height = 25;
-            this.dataService.Size = new System.Drawing.Size(240, 150);
-            this.dataService.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -220,6 +242,7 @@ namespace sanatoriy
             this.Name = "MainForm";
             this.Text = "Страница Услуг";
             this.servicesPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataService)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -227,7 +250,6 @@ namespace sanatoriy
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataService)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -266,13 +288,32 @@ namespace sanatoriy
             }
         }
 
+        private void LoadGrid()
+        {
+            dataService.ColumnCount = 4;
+            dataService.Columns[0].Name = "НАЗВАНИЕ УСЛУГИ";
+            dataService.Columns[1].Name = "ИМЯ СПЕЦИАЛИСТА";
+            dataService.Columns[2].Name = "ЦЕНА УСЛУГИ";
+            dataService.Columns[3].Name = "КАБИНЕТ";
+            DataGridViewButtonColumn ButtonColumn = new DataGridViewButtonColumn();
+            ButtonColumn.Text = "Подробнее";
+            ButtonColumn.Visible = true;
+            ButtonColumn.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            ButtonColumn.Name = "DeleteButtonColumn";
+            ButtonColumn.HeaderText = "Дополнительная инофрмация";
+            ButtonColumn.UseColumnTextForButtonValue = true;
+            ButtonColumn.FlatStyle = FlatStyle.Popup;
+        }
+
         private void LoadData()
         {
             Services ser = new Services();
-            for(int i = 0; i < ser.listOfService.Count(); i++)
+            dataService.ReadOnly = false;
+            for (; total < ser.listOfService.Count(); total++)
             {
-                dataService.Rows.Add(i + 1, ser.listOfService[i]);
+                dataService.Rows.Add(ser.listOfService[total]);
             }
+            dataService.ReadOnly = true;
         }
 
         private Panel servicesPanel;
@@ -288,5 +329,7 @@ namespace sanatoriy
         private Label fullNameLabel;
         private Label roleLabel;
         private DataGridView dataService;
+        private Button addServiceButton;
+        private DataGridViewButtonColumn ButtonColumn;
     }
 }

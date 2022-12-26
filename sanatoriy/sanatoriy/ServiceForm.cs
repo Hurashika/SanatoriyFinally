@@ -12,8 +12,11 @@ namespace sanatoriy
 {
     public partial class ServiceForm : Form
     {
-        public ServiceForm()
+        int serviceid;
+        int userid;
+        public ServiceForm(int servid)
         {
+            serviceid = servid;
             InitializeComponent();
         }
 
@@ -25,6 +28,16 @@ namespace sanatoriy
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void offButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void goServiceButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

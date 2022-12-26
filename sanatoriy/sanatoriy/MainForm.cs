@@ -14,17 +14,14 @@ namespace sanatoriy
     {
         long idUser;
         string roleUser;
+        int total = 0;
         public MainForm(long id)
         {
             idUser = id;
             InitializeComponent();
             Edit();
+            LoadGrid();
             LoadData();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -36,29 +33,33 @@ namespace sanatoriy
             }
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void offButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void addServiceButton_Click(object sender, EventArgs e)
         {
-
+            AddServiceForm f = new AddServiceForm();
+            f.ShowDialog();
+            this.LoadData();
         }
 
-        private void fullNameLabel_Click(object sender, EventArgs e)
+        private void dataService_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            int id = e.RowIndex;
+            ServiceForm f = new ServiceForm(id);
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
 
         private void profileButton_Click(object sender, EventArgs e)
         {
-
+            ProfileForm f = new ProfileForm(idUser);
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
     }
 }
