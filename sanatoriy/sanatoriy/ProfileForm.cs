@@ -19,5 +19,10 @@ namespace sanatoriy
             InitializeComponent();
             LoadInfo();
         }
+
+        private void loginLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

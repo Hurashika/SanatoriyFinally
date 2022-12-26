@@ -49,5 +49,10 @@ namespace sanatoriy
         {
             this.Close();
         }
+
+        private void nameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

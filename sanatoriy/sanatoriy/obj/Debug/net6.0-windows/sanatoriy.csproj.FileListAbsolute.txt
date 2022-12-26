@@ -85,3 +85,12 @@ C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\bin\Debug\net6.0-windows\MySql
 C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.csproj.CopyComplete
 C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.AddServiceForm.resources
 C:\Sanatoriy\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.ProfileForm.resources
+C:\MyProjects\SanatoriyFinally\sanatoriy\sanatoriy\bin\Debug\net6.0-windows\MySqlConnector.dll
+C:\MyProjects\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.AddServiceForm.resources
+C:\MyProjects\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.ChangeForm.resources
+C:\MyProjects\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.MainForm.resources
+C:\MyProjects\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.ProfileForm.resources
+C:\MyProjects\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.Properties.Resources.resources
+C:\MyProjects\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.ServiceForm.resources
+C:\MyProjects\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.SignForm.resources
+C:\MyProjects\SanatoriyFinally\sanatoriy\sanatoriy\obj\Debug\net6.0-windows\sanatoriy.csproj.CopyComplete
