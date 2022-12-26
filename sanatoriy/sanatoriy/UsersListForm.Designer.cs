@@ -30,14 +30,14 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.SignLabel = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.usersViewPanel = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.roleLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.roleBox = new System.Windows.Forms.TextBox();
             this.changeButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.usersViewPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,15 +60,15 @@
             this.SignLabel.TabIndex = 0;
             this.SignLabel.Text = "Список пользователей";
             // 
-            // panel2
+            // usersViewPanel
             // 
-            this.panel2.AutoScroll = true;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Location = new System.Drawing.Point(12, 116);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(876, 341);
-            this.panel2.TabIndex = 12;
+            this.usersViewPanel.AutoScroll = true;
+            this.usersViewPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.usersViewPanel.Controls.Add(this.dataGridView1);
+            this.usersViewPanel.Location = new System.Drawing.Point(12, 116);
+            this.usersViewPanel.Name = "usersViewPanel";
+            this.usersViewPanel.Size = new System.Drawing.Size(876, 341);
+            this.usersViewPanel.TabIndex = 12;
             // 
             // dataGridView1
             // 
@@ -94,15 +94,15 @@
             this.roleLabel.Text = "Роль:";
             this.roleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // roleBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(188, 487);
-            this.textBox1.MaxLength = 20;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 27);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.roleBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.roleBox.Location = new System.Drawing.Point(188, 487);
+            this.roleBox.MaxLength = 20;
+            this.roleBox.Name = "roleBox";
+            this.roleBox.Size = new System.Drawing.Size(200, 27);
+            this.roleBox.TabIndex = 15;
+            this.roleBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // changeButton
             // 
@@ -138,16 +138,16 @@
             this.ClientSize = new System.Drawing.Size(900, 600);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.changeButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.roleBox);
             this.Controls.Add(this.roleLabel);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.usersViewPanel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UsersListForm";
             this.Text = "UsersListForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.usersViewPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -158,10 +158,10 @@
 
         private Panel panel1;
         private Label SignLabel;
-        private Panel panel2;
+        private Panel usersViewPanel;
         private DataGridView dataGridView1;
         private Label roleLabel;
-        private TextBox textBox1;
+        private TextBox roleBox;
         private Button changeButton;
         private Button closeButton;
     }

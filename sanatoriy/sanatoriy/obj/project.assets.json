@@ -62,11 +62,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MyProjects\\SanatoriyFinally\\sanatoriy\\sanatoriy\\sanatoriy.csproj",
+      "projectUniqueName": "C:\\Users\\egrgh\\OneDrive\\Desktop\\Рабочий каталог\\sanatoriy\\sanatoriy\\sanatoriy.csproj",
       "projectName": "sanatoriy",
-      "projectPath": "C:\\MyProjects\\SanatoriyFinally\\sanatoriy\\sanatoriy\\sanatoriy.csproj",
+      "projectPath": "C:\\Users\\egrgh\\OneDrive\\Desktop\\Рабочий каталог\\sanatoriy\\sanatoriy\\sanatoriy.csproj",
       "packagesPath": "C:\\Users\\egrgh\\.nuget\\packages\\",
-      "outputPath": "C:\\MyProjects\\SanatoriyFinally\\sanatoriy\\sanatoriy\\obj\\",
+      "outputPath": "C:\\Users\\egrgh\\OneDrive\\Desktop\\Рабочий каталог\\sanatoriy\\sanatoriy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
