@@ -157,6 +157,7 @@
             this.goServiceButton.TabIndex = 27;
             this.goServiceButton.Text = "Услуги";
             this.goServiceButton.UseVisualStyleBackColor = false;
+            this.goServiceButton.Click += new System.EventHandler(this.goServiceButton_Click);
             // 
             // offButton
             // 
@@ -170,6 +171,7 @@
             this.offButton.TabIndex = 28;
             this.offButton.Text = "Выход";
             this.offButton.UseVisualStyleBackColor = false;
+            this.offButton.Click += new System.EventHandler(this.offButton_Click);
             // 
             // cabinetLabel
             // 
@@ -384,6 +386,7 @@
             // 
             // panel4
             // 
+            this.panel4.AutoScroll = true;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Controls.Add(this.servicesLabel);
@@ -396,11 +399,11 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 81);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 89);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(457, 409);
+            this.dataGridView1.Size = new System.Drawing.Size(435, 533);
             this.dataGridView1.TabIndex = 34;
             // 
             // label4

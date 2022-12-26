@@ -37,6 +37,7 @@ namespace sanatoriy
             this.dataService = new System.Windows.Forms.DataGridView();
             this.ButtonColumn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.addServiceButton = new System.Windows.Forms.Button();
             this.roleLabel = new System.Windows.Forms.Label();
             this.fullNameLabel = new System.Windows.Forms.Label();
             this.profileButton = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@ namespace sanatoriy
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.addServiceButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -107,6 +107,21 @@ namespace sanatoriy
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1280, 115);
             this.panel2.TabIndex = 1;
+            // 
+            // addServiceButton
+            // 
+            this.addServiceButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
+            this.addServiceButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addServiceButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addServiceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.addServiceButton.Location = new System.Drawing.Point(843, 0);
+            this.addServiceButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.addServiceButton.Name = "addServiceButton";
+            this.addServiceButton.Size = new System.Drawing.Size(218, 57);
+            this.addServiceButton.TabIndex = 3;
+            this.addServiceButton.Text = "Добавить услугу";
+            this.addServiceButton.UseVisualStyleBackColor = false;
+            this.addServiceButton.Click += new System.EventHandler(this.addServiceButton_Click);
             // 
             // roleLabel
             // 
@@ -198,30 +213,15 @@ namespace sanatoriy
             this.panel4.TabIndex = 2;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // addServiceButton
-            // 
-            this.addServiceButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
-            this.addServiceButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addServiceButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.addServiceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.addServiceButton.Location = new System.Drawing.Point(843, 0);
-            this.addServiceButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.addServiceButton.Name = "addServiceButton";
-            this.addServiceButton.Size = new System.Drawing.Size(218, 57);
-            this.addServiceButton.TabIndex = 3;
-            this.addServiceButton.Text = "Добавить услугу";
-            this.addServiceButton.UseVisualStyleBackColor = false;
-            this.addServiceButton.Click += new System.EventHandler(this.addServiceButton_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(47, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(433, 17);
+            this.label3.Size = new System.Drawing.Size(460, 17);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Надо бы админу дать список пользователей, чтобы он им роли менял";
+            this.label3.Text = "Надо сделать кнопку Добавить услугу видимой только для врача и админа";
             // 
             // label2
             // 

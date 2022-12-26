@@ -24,5 +24,15 @@ namespace sanatoriy
         {
 
         }
+
+        private void goServiceButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void offButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
