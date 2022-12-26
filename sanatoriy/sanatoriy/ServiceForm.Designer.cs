@@ -1,4 +1,6 @@
-﻿namespace sanatoriy
+﻿using MySqlConnector;
+
+namespace sanatoriy
 {
     partial class ServiceForm
     {
@@ -57,8 +59,9 @@
             this.panel2.Controls.Add(this.goServiceButton);
             this.panel2.Controls.Add(this.offButton);
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1280, 115);
+            this.panel2.Size = new System.Drawing.Size(1120, 87);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -68,20 +71,22 @@
             this.signButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.signButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.signButton.Location = new System.Drawing.Point(843, 55);
+            this.signButton.Location = new System.Drawing.Point(738, 41);
+            this.signButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.signButton.Name = "signButton";
-            this.signButton.Size = new System.Drawing.Size(437, 59);
+            this.signButton.Size = new System.Drawing.Size(382, 44);
             this.signButton.TabIndex = 27;
             this.signButton.Text = "Записаться";
             this.signButton.UseVisualStyleBackColor = false;
+            this.signButton.Click += new System.EventHandler(this.signButton_Click);
             // 
             // roleLabel
             // 
             this.roleLabel.AutoSize = true;
             this.roleLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roleLabel.Location = new System.Drawing.Point(507, 56);
+            this.roleLabel.Location = new System.Drawing.Point(444, 42);
             this.roleLabel.Name = "roleLabel";
-            this.roleLabel.Size = new System.Drawing.Size(235, 25);
+            this.roleLabel.Size = new System.Drawing.Size(199, 22);
             this.roleLabel.TabIndex = 29;
             this.roleLabel.Text = "\"Роль пользователя\"";
             // 
@@ -89,9 +94,9 @@
             // 
             this.fullNameLabel.AutoSize = true;
             this.fullNameLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.fullNameLabel.Location = new System.Drawing.Point(475, 19);
+            this.fullNameLabel.Location = new System.Drawing.Point(416, 14);
             this.fullNameLabel.Name = "fullNameLabel";
-            this.fullNameLabel.Size = new System.Drawing.Size(293, 25);
+            this.fullNameLabel.Size = new System.Drawing.Size(244, 22);
             this.fullNameLabel.TabIndex = 3;
             this.fullNameLabel.Text = "\"Имя Фамилия Отчество\"";
             // 
@@ -101,17 +106,18 @@
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(400, 115);
+            this.panel3.Size = new System.Drawing.Size(350, 86);
             this.panel3.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(149, 36);
+            this.label1.Location = new System.Drawing.Point(130, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 42);
+            this.label1.Size = new System.Drawing.Size(168, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "ОК \"Клей\"";
             // 
@@ -119,8 +125,9 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(115, 115);
+            this.pictureBox1.Size = new System.Drawing.Size(101, 86);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -131,9 +138,10 @@
             this.goServiceButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goServiceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goServiceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.goServiceButton.Location = new System.Drawing.Point(843, 0);
+            this.goServiceButton.Location = new System.Drawing.Point(738, 0);
+            this.goServiceButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.goServiceButton.Name = "goServiceButton";
-            this.goServiceButton.Size = new System.Drawing.Size(218, 57);
+            this.goServiceButton.Size = new System.Drawing.Size(191, 43);
             this.goServiceButton.TabIndex = 27;
             this.goServiceButton.Text = "Услуги";
             this.goServiceButton.UseVisualStyleBackColor = false;
@@ -145,9 +153,10 @@
             this.offButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.offButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.offButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.offButton.Location = new System.Drawing.Point(1062, 0);
+            this.offButton.Location = new System.Drawing.Point(929, 0);
+            this.offButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.offButton.Name = "offButton";
-            this.offButton.Size = new System.Drawing.Size(218, 57);
+            this.offButton.Size = new System.Drawing.Size(191, 43);
             this.offButton.TabIndex = 28;
             this.offButton.Text = "Выход";
             this.offButton.UseVisualStyleBackColor = false;
@@ -157,9 +166,9 @@
             // 
             this.Label.AutoSize = true;
             this.Label.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.Label.Location = new System.Drawing.Point(23, 132);
+            this.Label.Location = new System.Drawing.Point(20, 99);
             this.Label.Name = "Label";
-            this.Label.Size = new System.Drawing.Size(141, 32);
+            this.Label.Size = new System.Drawing.Size(113, 25);
             this.Label.TabIndex = 4;
             this.Label.Text = "Описание:";
             // 
@@ -167,11 +176,12 @@
             // 
             this.InfoLabel.AutoSize = true;
             this.InfoLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.InfoLabel.Location = new System.Drawing.Point(170, 138);
+            this.InfoLabel.Location = new System.Drawing.Point(149, 104);
             this.InfoLabel.Name = "InfoLabel";
-            this.InfoLabel.Size = new System.Drawing.Size(127, 26);
+            this.InfoLabel.Size = new System.Drawing.Size(103, 21);
             this.InfoLabel.TabIndex = 5;
             this.InfoLabel.Text = "\"Описание\"";
+            this.InfoLabel.Click += new System.EventHandler(this.InfoLabel_Click);
             // 
             // deleteButton
             // 
@@ -179,9 +189,10 @@
             this.deleteButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.deleteButton.Location = new System.Drawing.Point(12, 651);
+            this.deleteButton.Location = new System.Drawing.Point(10, 488);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(218, 57);
+            this.deleteButton.Size = new System.Drawing.Size(191, 43);
             this.deleteButton.TabIndex = 30;
             this.deleteButton.Text = "Удалить";
             this.deleteButton.UseVisualStyleBackColor = false;
@@ -189,15 +200,16 @@
             // 
             // ServiceForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(1120, 540);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.InfoLabel);
             this.Controls.Add(this.Label);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ServiceForm";
             this.Text = "ServiceForm";
             this.panel2.ResumeLayout(false);
@@ -211,6 +223,15 @@
         }
 
         #endregion
+
+        private void LoadData()
+        {
+            DBase data = new DBase();
+            string sql = $"select info from service where id = '{serviceid}'";
+            data.OpenConnection();
+            MySqlCommand command = new MySqlCommand(sql, data.GetConnection());
+            this.InfoLabel.Text = command.ExecuteReader().ToString();
+        }
 
         private Panel panel2;
         private Button goServiceButton;

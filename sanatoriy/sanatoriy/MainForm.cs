@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -42,13 +43,21 @@ namespace sanatoriy
         {
             AddServiceForm f = new AddServiceForm();
             f.ShowDialog();
-            this.LoadData();
         }
 
         private void dataService_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int id = e.RowIndex;
-            ServiceForm f = new ServiceForm(id);
+            string name = this.dataService.SelectedCells[0].Value.ToString();
+            DBase data = new DBase();
+            string sql = $"select id from service where name_of_service = '{name}'";
+            MySqlCommand command = new MySqlCommand(sql, data.GetConnection());
+            data.OpenConnection();
+            MySqlDataReader reader = command.ExecuteReader();
+            reader.Read();
+            int id = int.Parse(reader[0].ToString());
+            reader.Close();
+            data.CloseConnection();
+            ServiceForm f = new ServiceForm(id, idUser);
             this.Hide();
             f.ShowDialog();
             this.Show();

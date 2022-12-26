@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bxbcUEsn6f0Tby7rrB9zzoncekruUYqccv3dEJ5cO+jOLI9+/gFhAFd61OXSLB5aG6rdApOAk0WuM6xZLgCnxA==",
+  "dgSpecHash": "B0u0NH1EJnkaHaLA1vg0naKuK1R5v91SaJn2t6p9kCFuOrOAki+OAERFq9muEW8CxVyyTg2RQ+P0oUZinB59QA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\egrgh\\OneDrive\\Desktop\\Рабочий каталог\\sanatoriy\\sanatoriy\\sanatoriy.csproj",
+  "projectFilePath": "C:\\Sanatoriy\\SanatoriyFinally\\sanatoriy\\sanatoriy\\sanatoriy.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\egrgh\\.nuget\\packages\\mysqlconnector\\1.3.9\\mysqlconnector.1.3.9.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\mysqlconnector\\1.3.9\\mysqlconnector.1.3.9.nupkg.sha512"
   ],
   "logs": []
 }

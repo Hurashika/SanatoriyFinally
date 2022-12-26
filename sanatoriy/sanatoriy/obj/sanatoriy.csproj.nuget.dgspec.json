@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\egrgh\\OneDrive\\Desktop\\Рабочий каталог\\sanatoriy\\sanatoriy\\sanatoriy.csproj": {}
+    "C:\\Sanatoriy\\SanatoriyFinally\\sanatoriy\\sanatoriy\\sanatoriy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\egrgh\\OneDrive\\Desktop\\Рабочий каталог\\sanatoriy\\sanatoriy\\sanatoriy.csproj": {
+    "C:\\Sanatoriy\\SanatoriyFinally\\sanatoriy\\sanatoriy\\sanatoriy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\egrgh\\OneDrive\\Desktop\\Рабочий каталог\\sanatoriy\\sanatoriy\\sanatoriy.csproj",
+        "projectUniqueName": "C:\\Sanatoriy\\SanatoriyFinally\\sanatoriy\\sanatoriy\\sanatoriy.csproj",
         "projectName": "sanatoriy",
-        "projectPath": "C:\\Users\\egrgh\\OneDrive\\Desktop\\Рабочий каталог\\sanatoriy\\sanatoriy\\sanatoriy.csproj",
-        "packagesPath": "C:\\Users\\egrgh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\egrgh\\OneDrive\\Desktop\\Рабочий каталог\\sanatoriy\\sanatoriy\\obj\\",
+        "projectPath": "C:\\Sanatoriy\\SanatoriyFinally\\sanatoriy\\sanatoriy\\sanatoriy.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Sanatoriy\\SanatoriyFinally\\sanatoriy\\sanatoriy\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\egrgh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -27,12 +27,22 @@ namespace sanatoriy
 
         private void goServiceButton_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void offButton_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+        private void userService_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
+
+        private void userViewButton_Click(object sender, EventArgs e)
+        {
+            UsersListForm f = new UsersListForm();
+            f.ShowDialog();
         }
     }
 }
