@@ -43,6 +43,7 @@ namespace sanatoriy
         {
             AddServiceForm f = new AddServiceForm();
             f.ShowDialog();
+            this.LoadData();
         }
 
         private void dataService_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -61,6 +62,7 @@ namespace sanatoriy
             this.Hide();
             f.ShowDialog();
             this.Show();
+            this.LoadData();
         }
 
         private void profileButton_Click(object sender, EventArgs e)

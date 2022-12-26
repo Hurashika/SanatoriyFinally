@@ -45,11 +45,25 @@ namespace sanatoriy
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
+            DBase data = new DBase();
+            string sql = $"delete from service where id = '{serviceid}'";
+            MySqlCommand command = new MySqlCommand(sql, data.GetConnection());
+            data.OpenConnection();
+            command.ExecuteNonQuery();
+            data.CloseConnection();
 
+            MessageBox.Show("Услуга удалена");
+            this.Close();
         }
 
         private void signButton_Click(object sender, EventArgs e)
         {
+            if(userid == -1)
+            {
+                SignForm f = new SignForm();
+                f.ShowDialog();
+                return;
+            }
             DBase data = new DBase();
             data.OpenConnection();
             string sql = $"select service from users where id = '{userid}'";
@@ -58,6 +72,7 @@ namespace sanatoriy
             reader.Read();
             string[] services = reader[0].ToString().Split('!');
             reader.Close();
+
             for(int i = 0; i < services.Length; i++)
             {
                 if (services[i] == serviceid.ToString())

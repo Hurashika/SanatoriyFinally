@@ -44,5 +44,12 @@ namespace sanatoriy
             UsersListForm f = new UsersListForm();
             f.ShowDialog();
         }
+
+        private void changeButton_Click(object sender, EventArgs e)
+        {
+            ChangeForm f = new ChangeForm(idUser);
+            f.ShowDialog();
+            this.LoadInfo();
+        }
     }
 }

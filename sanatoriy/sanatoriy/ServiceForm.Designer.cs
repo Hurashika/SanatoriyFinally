@@ -230,7 +230,28 @@ namespace sanatoriy
             string sql = $"select info from service where id = '{serviceid}'";
             data.OpenConnection();
             MySqlCommand command = new MySqlCommand(sql, data.GetConnection());
-            this.InfoLabel.Text = command.ExecuteReader().ToString();
+            MySqlDataReader reader = command.ExecuteReader();
+            reader.Read();
+            this.InfoLabel.Text = reader[0].ToString();
+            reader.Close();
+            data.CloseConnection();
+
+            sql = $"select role from users where id = '{userid}'";
+            command.CommandText = sql;
+            data.OpenConnection();
+            reader = command.ExecuteReader();
+            reader.Read();
+            string role = reader[0].ToString();
+            reader.Close();
+            if(role == "admin" || role == "doctor")
+            {
+                this.deleteButton.Visible = true;
+            }
+            else
+            {
+                this.deleteButton.Visible = false;
+            }
+            data.CloseConnection();
         }
 
         private Panel panel2;

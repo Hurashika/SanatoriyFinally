@@ -295,6 +295,7 @@ namespace sanatoriy
 
         private void LoadGrid()
         {
+            
             dataService.ColumnCount = 4;
             dataService.Columns[0].Name = "НАЗВАНИЕ УСЛУГИ";
             dataService.Columns[1].Name = "ИМЯ СПЕЦИАЛИСТА";
@@ -309,11 +310,12 @@ namespace sanatoriy
 
         private void LoadData()
         {
+            dataService.Rows.Clear();
             Services ser = new Services();
             dataService.ReadOnly = false;
-            for (; total < ser.listOfService.Count(); total++)
+            for (int i = 0; i < ser.listOfService.Count(); i++)
             {
-                dataService.Rows.Add(ser.listOfService[total]);
+                dataService.Rows.Add(ser.listOfService[i]);
             }
             dataService.ReadOnly = true;
         }

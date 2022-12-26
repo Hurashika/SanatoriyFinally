@@ -60,7 +60,6 @@ namespace sanatoriy
             this.panel4 = new System.Windows.Forms.Panel();
             this.userService = new System.Windows.Forms.DataGridView();
             this.ButtomColumn = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -204,6 +203,7 @@ namespace sanatoriy
             this.changeButton.TabIndex = 18;
             this.changeButton.Text = "Изменить";
             this.changeButton.UseVisualStyleBackColor = true;
+            this.changeButton.Click += new System.EventHandler(this.changeButton_Click);
             // 
             // passProfileLabel
             // 
@@ -405,22 +405,12 @@ namespace sanatoriy
             // 
             this.ButtomColumn.Name = "ButtomColumn";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(811, 89);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(222, 15);
-            this.label4.TabIndex = 35;
-            this.label4.Text = "кнопка дать роль видна только админу";
-            // 
             // ProfileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1120, 540);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -467,6 +457,14 @@ namespace sanatoriy
             reader.Close();
             data.CloseConnection();
             
+            if(this.roleProfileLabel.Text == "admin")
+            {
+                userViewButton.Visible = true;
+            }
+            else
+            {
+                userViewButton.Visible = false;
+            }
             
             sql = $"select service from users where id = '{idUser}'";
             MySqlCommand servicecommand = new MySqlCommand(sql, data.GetConnection());
@@ -526,7 +524,6 @@ namespace sanatoriy
         private Label servicesLabel;
         private Panel panel4;
         private Button userViewButton;
-        private Label label4;
         private DataGridView userService;
         private DataGridViewButtonColumn ButtomColumn;
     }

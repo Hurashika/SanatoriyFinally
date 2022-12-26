@@ -34,8 +34,9 @@ namespace sanatoriy
             string doctor = doctorBox.Text;
             string coast = coastBox.Text;
             string cabinet = cabinetBox.Text;
+            string info = descriptionRichBox.Text;
             DBase data = new DBase();
-            string sql = $"insert into service(name_of_service, doctor, coast, cabinet) values('{name}', '{doctor}', '{coast}', '{cabinet}')";
+            string sql = $"insert into service(name_of_service, doctor, coast, cabinet, info) values('{name}', '{doctor}', '{coast}', '{cabinet}', '{info}')";
             MySqlCommand insertcommand = new MySqlCommand(sql, data.GetConnection());
             data.OpenConnection();
             if(insertcommand.ExecuteNonQuery() == 1)
