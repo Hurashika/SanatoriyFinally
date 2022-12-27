@@ -16,6 +16,7 @@ namespace sanatoriy
         public AddServiceForm()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -52,6 +53,11 @@ namespace sanatoriy
         }
 
         private void nameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddServiceForm_Load(object sender, EventArgs e)
         {
 
         }

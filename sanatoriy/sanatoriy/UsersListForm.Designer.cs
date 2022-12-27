@@ -153,6 +153,7 @@ namespace sanatoriy
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UsersListForm";
             this.Text = "UsersListForm";
+            this.Load += new System.EventHandler(this.UsersListForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.usersViewPanel.ResumeLayout(false);

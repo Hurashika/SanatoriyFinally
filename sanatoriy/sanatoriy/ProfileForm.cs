@@ -18,6 +18,7 @@ namespace sanatoriy
             idUser = id;
             InitializeComponent();
             LoadInfo();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void loginLabel_Click(object sender, EventArgs e)
@@ -50,6 +51,11 @@ namespace sanatoriy
             ChangeForm f = new ChangeForm(idUser);
             f.ShowDialog();
             this.LoadInfo();
+        }
+
+        private void ProfileForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

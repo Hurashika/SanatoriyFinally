@@ -414,6 +414,7 @@ namespace sanatoriy
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ProfileForm";
             this.Text = "UserCabinetForm";
+            this.Load += new System.EventHandler(this.ProfileForm_Load);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

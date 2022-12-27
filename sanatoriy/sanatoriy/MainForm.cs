@@ -23,6 +23,7 @@ namespace sanatoriy
             Edit();
             LoadGrid();
             LoadData();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -71,6 +72,11 @@ namespace sanatoriy
             this.Hide();
             f.ShowDialog();
             this.Show();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

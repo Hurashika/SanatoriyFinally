@@ -17,6 +17,7 @@ namespace sanatoriy
         {
             InitializeComponent();
             LoadData();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -35,6 +36,11 @@ namespace sanatoriy
             command.ExecuteNonQuery();
             data.CloseConnection();
             LoadData();
+        }
+
+        private void UsersListForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

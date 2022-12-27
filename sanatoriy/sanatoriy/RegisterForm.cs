@@ -16,6 +16,7 @@ namespace sanatoriy
         public RegisterForm()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -76,6 +77,11 @@ namespace sanatoriy
         }
 
         private void emailLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
         {
 
         }

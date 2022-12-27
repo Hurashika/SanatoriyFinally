@@ -18,6 +18,7 @@ namespace sanatoriy
         {
             userid = id;
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void autorisationButton_Click(object sender, EventArgs e)
@@ -97,6 +98,11 @@ namespace sanatoriy
         private void cancelButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ChangeForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

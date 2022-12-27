@@ -236,6 +236,7 @@ namespace sanatoriy
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.Text = "Страница Услуг";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.servicesPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataService)).EndInit();
             this.panel2.ResumeLayout(false);

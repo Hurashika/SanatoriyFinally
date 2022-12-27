@@ -21,6 +21,7 @@ namespace sanatoriy
             userid = (int)usrid;
             InitializeComponent();
             LoadData();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -95,6 +96,11 @@ namespace sanatoriy
         }
 
         private void InfoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ServiceForm_Load(object sender, EventArgs e)
         {
 
         }

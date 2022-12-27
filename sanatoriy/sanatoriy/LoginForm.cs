@@ -8,6 +8,7 @@ namespace sanatoriy
         public LoginForm()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void closeButton_Click(object sender, EventArgs e)
