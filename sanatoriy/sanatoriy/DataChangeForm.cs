@@ -47,14 +47,14 @@ namespace sanatoriy
             newpolice = this.newPoliceBox.Text;
             newname = this.newFullnameBox.Text;
 
-            if(newlogin != "")
+            if (newlogin != "")
             {
                 sql = $"select id from users where login = '{newlogin}'";
                 command.CommandText = sql;
                 data.OpenConnection();
                 reader = command.ExecuteReader();
                 reader.Read();
-                if(reader != null)
+                if (reader.HasRows)
                 {
                     MessageBox.Show("Такой login уже существует");
                     return;
@@ -69,7 +69,7 @@ namespace sanatoriy
                 data.CloseConnection();
             }
 
-            if(newpass != "")
+            if (newpass != "")
             {
                 sql = $"update users set pass = '{newpass}' where id = '{userid}'";
                 command.CommandText = sql;
