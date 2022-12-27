@@ -40,7 +40,7 @@ namespace sanatoriy
 
         private void goServiceButton_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
