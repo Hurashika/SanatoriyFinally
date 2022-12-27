@@ -236,6 +236,12 @@ namespace sanatoriy
             reader.Close();
             data.CloseConnection();
 
+            if(userid == -1)
+            {
+                this.deleteButton.Visible = false;
+                return;
+            }
+
             sql = $"select role from users where id = '{userid}'";
             command.CommandText = sql;
             data.OpenConnection();
