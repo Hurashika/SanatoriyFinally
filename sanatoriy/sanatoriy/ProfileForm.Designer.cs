@@ -490,8 +490,8 @@ namespace sanatoriy
                 sql = $"select name_of_service from service where id = '{int.Parse(services[i])}'";
                 MySqlCommand namecommand = new MySqlCommand(sql, data.GetConnection());
                 MySqlDataReader namereader = namecommand.ExecuteReader();
-                namereader.Read();
-                this.userService.Rows.Add(namereader[0].ToString());
+                while(namereader.Read())
+                    this.userService.Rows.Add(namereader[0].ToString());
                 namereader.Close();
                 data.CloseConnection();
             }
