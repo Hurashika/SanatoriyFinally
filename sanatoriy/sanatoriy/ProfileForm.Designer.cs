@@ -77,9 +77,8 @@ namespace sanatoriy
             this.panel2.Controls.Add(this.goServiceButton);
             this.panel2.Controls.Add(this.offButton);
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1120, 87);
+            this.panel2.Size = new System.Drawing.Size(1280, 115);
             this.panel2.TabIndex = 3;
             // 
             // userViewButton
@@ -88,10 +87,9 @@ namespace sanatoriy
             this.userViewButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.userViewButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.userViewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.userViewButton.Location = new System.Drawing.Point(738, 42);
-            this.userViewButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.userViewButton.Location = new System.Drawing.Point(843, 56);
             this.userViewButton.Name = "userViewButton";
-            this.userViewButton.Size = new System.Drawing.Size(382, 44);
+            this.userViewButton.Size = new System.Drawing.Size(437, 59);
             this.userViewButton.TabIndex = 35;
             this.userViewButton.Text = "Список пользователей";
             this.userViewButton.UseVisualStyleBackColor = false;
@@ -103,18 +101,17 @@ namespace sanatoriy
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(350, 86);
+            this.panel3.Size = new System.Drawing.Size(400, 115);
             this.panel3.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(130, 27);
+            this.label1.Location = new System.Drawing.Point(149, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 36);
+            this.label1.Size = new System.Drawing.Size(205, 42);
             this.label1.TabIndex = 1;
             this.label1.Text = "ОК \"Клей\"";
             // 
@@ -122,9 +119,8 @@ namespace sanatoriy
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 86);
+            this.pictureBox1.Size = new System.Drawing.Size(115, 115);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -135,10 +131,9 @@ namespace sanatoriy
             this.goServiceButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.goServiceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.goServiceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.goServiceButton.Location = new System.Drawing.Point(738, 0);
-            this.goServiceButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.goServiceButton.Location = new System.Drawing.Point(843, 0);
             this.goServiceButton.Name = "goServiceButton";
-            this.goServiceButton.Size = new System.Drawing.Size(191, 43);
+            this.goServiceButton.Size = new System.Drawing.Size(218, 57);
             this.goServiceButton.TabIndex = 27;
             this.goServiceButton.Text = "Услуги";
             this.goServiceButton.UseVisualStyleBackColor = false;
@@ -150,10 +145,9 @@ namespace sanatoriy
             this.offButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.offButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.offButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.offButton.Location = new System.Drawing.Point(929, 0);
-            this.offButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.offButton.Location = new System.Drawing.Point(1062, 0);
             this.offButton.Name = "offButton";
-            this.offButton.Size = new System.Drawing.Size(191, 43);
+            this.offButton.Size = new System.Drawing.Size(218, 57);
             this.offButton.TabIndex = 28;
             this.offButton.Text = "Выход";
             this.offButton.UseVisualStyleBackColor = false;
@@ -163,9 +157,9 @@ namespace sanatoriy
             // 
             this.cabinetLabel.AutoSize = true;
             this.cabinetLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cabinetLabel.Location = new System.Drawing.Point(416, 109);
+            this.cabinetLabel.Location = new System.Drawing.Point(475, 145);
             this.cabinetLabel.Name = "cabinetLabel";
-            this.cabinetLabel.Size = new System.Drawing.Size(271, 36);
+            this.cabinetLabel.Size = new System.Drawing.Size(325, 42);
             this.cabinetLabel.TabIndex = 30;
             this.cabinetLabel.Text = "Личный Кабинет";
             // 
@@ -186,20 +180,18 @@ namespace sanatoriy
             this.panel1.Controls.Add(this.loginLabel);
             this.panel1.Controls.Add(this.nameProfileLabel);
             this.panel1.Controls.Add(this.nameLabel);
-            this.panel1.Location = new System.Drawing.Point(10, 161);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(11, 215);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(405, 370);
+            this.panel1.Size = new System.Drawing.Size(463, 493);
             this.panel1.TabIndex = 31;
             // 
             // changeButton
             // 
             this.changeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.changeButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.changeButton.Location = new System.Drawing.Point(120, 308);
-            this.changeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.changeButton.Location = new System.Drawing.Point(137, 411);
             this.changeButton.Name = "changeButton";
-            this.changeButton.Size = new System.Drawing.Size(175, 38);
+            this.changeButton.Size = new System.Drawing.Size(200, 51);
             this.changeButton.TabIndex = 18;
             this.changeButton.Text = "Изменить";
             this.changeButton.UseVisualStyleBackColor = true;
@@ -210,9 +202,9 @@ namespace sanatoriy
             this.passProfileLabel.AutoSize = true;
             this.passProfileLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.passProfileLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.passProfileLabel.Location = new System.Drawing.Point(155, 197);
+            this.passProfileLabel.Location = new System.Drawing.Point(177, 263);
             this.passProfileLabel.Name = "passProfileLabel";
-            this.passProfileLabel.Size = new System.Drawing.Size(102, 19);
+            this.passProfileLabel.Size = new System.Drawing.Size(125, 22);
             this.passProfileLabel.TabIndex = 17;
             this.passProfileLabel.Text = "\"ваш пароль\"";
             // 
@@ -221,9 +213,9 @@ namespace sanatoriy
             this.passLabel.AutoSize = true;
             this.passLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.passLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.passLabel.Location = new System.Drawing.Point(24, 197);
+            this.passLabel.Location = new System.Drawing.Point(27, 263);
             this.passLabel.Name = "passLabel";
-            this.passLabel.Size = new System.Drawing.Size(79, 22);
+            this.passLabel.Size = new System.Drawing.Size(96, 26);
             this.passLabel.TabIndex = 16;
             this.passLabel.Text = "Пароль:";
             // 
@@ -232,9 +224,9 @@ namespace sanatoriy
             this.profileLabel.AutoSize = true;
             this.profileLabel.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.profileLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.profileLabel.Location = new System.Drawing.Point(111, 19);
+            this.profileLabel.Location = new System.Drawing.Point(127, 25);
             this.profileLabel.Name = "profileLabel";
-            this.profileLabel.Size = new System.Drawing.Size(165, 25);
+            this.profileLabel.Size = new System.Drawing.Size(208, 32);
             this.profileLabel.TabIndex = 15;
             this.profileLabel.Text = "Личные данные";
             // 
@@ -243,9 +235,9 @@ namespace sanatoriy
             this.roleProfileLabel.AutoSize = true;
             this.roleProfileLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.roleProfileLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.roleProfileLabel.Location = new System.Drawing.Point(156, 225);
+            this.roleProfileLabel.Location = new System.Drawing.Point(178, 300);
             this.roleProfileLabel.Name = "roleProfileLabel";
-            this.roleProfileLabel.Size = new System.Drawing.Size(94, 19);
+            this.roleProfileLabel.Size = new System.Drawing.Size(115, 22);
             this.roleProfileLabel.TabIndex = 14;
             this.roleProfileLabel.Text = "\"ваша роль\"";
             // 
@@ -255,9 +247,9 @@ namespace sanatoriy
             this.label.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label.ForeColor = System.Drawing.Color.Transparent;
             this.label.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label.Location = new System.Drawing.Point(24, 225);
+            this.label.Location = new System.Drawing.Point(27, 300);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(55, 22);
+            this.label.Size = new System.Drawing.Size(67, 26);
             this.label.TabIndex = 13;
             this.label.Text = "Роль:";
             this.label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -267,9 +259,9 @@ namespace sanatoriy
             this.phoneProfileLabel.AutoSize = true;
             this.phoneProfileLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.phoneProfileLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.phoneProfileLabel.Location = new System.Drawing.Point(156, 170);
+            this.phoneProfileLabel.Location = new System.Drawing.Point(178, 227);
             this.phoneProfileLabel.Name = "phoneProfileLabel";
-            this.phoneProfileLabel.Size = new System.Drawing.Size(168, 19);
+            this.phoneProfileLabel.Size = new System.Drawing.Size(208, 22);
             this.phoneProfileLabel.TabIndex = 12;
             this.phoneProfileLabel.Text = "\"ваш номер телефона\"";
             // 
@@ -279,9 +271,9 @@ namespace sanatoriy
             this.phoneLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.phoneLabel.ForeColor = System.Drawing.Color.Transparent;
             this.phoneLabel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.phoneLabel.Location = new System.Drawing.Point(24, 166);
+            this.phoneLabel.Location = new System.Drawing.Point(27, 221);
             this.phoneLabel.Name = "phoneLabel";
-            this.phoneLabel.Size = new System.Drawing.Size(87, 22);
+            this.phoneLabel.Size = new System.Drawing.Size(104, 26);
             this.phoneLabel.TabIndex = 11;
             this.phoneLabel.Text = "Телефон:";
             this.phoneLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -291,9 +283,9 @@ namespace sanatoriy
             this.policeProfileLabel.AutoSize = true;
             this.policeProfileLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.policeProfileLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.policeProfileLabel.Location = new System.Drawing.Point(156, 141);
+            this.policeProfileLabel.Location = new System.Drawing.Point(178, 188);
             this.policeProfileLabel.Name = "policeProfileLabel";
-            this.policeProfileLabel.Size = new System.Drawing.Size(127, 19);
+            this.policeProfileLabel.Size = new System.Drawing.Size(157, 22);
             this.policeProfileLabel.TabIndex = 10;
             this.policeProfileLabel.Text = "\"ваш мед. полис\"";
             // 
@@ -302,9 +294,9 @@ namespace sanatoriy
             this.policeLabel.AutoSize = true;
             this.policeLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.policeLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.policeLabel.Location = new System.Drawing.Point(24, 138);
+            this.policeLabel.Location = new System.Drawing.Point(27, 184);
             this.policeLabel.Name = "policeLabel";
-            this.policeLabel.Size = new System.Drawing.Size(113, 22);
+            this.policeLabel.Size = new System.Drawing.Size(136, 26);
             this.policeLabel.TabIndex = 9;
             this.policeLabel.Text = "Мед. Полис:";
             // 
@@ -313,9 +305,9 @@ namespace sanatoriy
             this.loginProfileLabel.AutoSize = true;
             this.loginProfileLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.loginProfileLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.loginProfileLabel.Location = new System.Drawing.Point(156, 112);
+            this.loginProfileLabel.Location = new System.Drawing.Point(178, 149);
             this.loginProfileLabel.Name = "loginProfileLabel";
-            this.loginProfileLabel.Size = new System.Drawing.Size(93, 19);
+            this.loginProfileLabel.Size = new System.Drawing.Size(114, 22);
             this.loginProfileLabel.TabIndex = 8;
             this.loginProfileLabel.Text = "\"ваш логин\"";
             // 
@@ -324,9 +316,9 @@ namespace sanatoriy
             this.loginLabel.AutoSize = true;
             this.loginLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.loginLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.loginLabel.Location = new System.Drawing.Point(32, 109);
+            this.loginLabel.Location = new System.Drawing.Point(37, 145);
             this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(58, 22);
+            this.loginLabel.Size = new System.Drawing.Size(67, 26);
             this.loginLabel.TabIndex = 7;
             this.loginLabel.Text = "login:";
             this.loginLabel.Click += new System.EventHandler(this.loginLabel_Click);
@@ -336,9 +328,9 @@ namespace sanatoriy
             this.nameProfileLabel.AutoSize = true;
             this.nameProfileLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.nameProfileLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.nameProfileLabel.Location = new System.Drawing.Point(156, 80);
+            this.nameProfileLabel.Location = new System.Drawing.Point(178, 107);
             this.nameProfileLabel.Name = "nameProfileLabel";
-            this.nameProfileLabel.Size = new System.Drawing.Size(164, 19);
+            this.nameProfileLabel.Size = new System.Drawing.Size(204, 22);
             this.nameProfileLabel.TabIndex = 6;
             this.nameProfileLabel.Text = "\"ваши фамилия и имя\"";
             // 
@@ -347,18 +339,18 @@ namespace sanatoriy
             this.nameLabel.AutoSize = true;
             this.nameLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.nameLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.nameLabel.Location = new System.Drawing.Point(24, 80);
+            this.nameLabel.Location = new System.Drawing.Point(27, 107);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(61, 22);
+            this.nameLabel.Size = new System.Drawing.Size(75, 26);
             this.nameLabel.TabIndex = 5;
             this.nameLabel.Text = "ФИО:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(888, 194);
+            this.label2.Location = new System.Drawing.Point(1015, 259);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 15);
+            this.label2.Size = new System.Drawing.Size(0, 20);
             this.label2.TabIndex = 32;
             // 
             // servicesLabel
@@ -367,9 +359,9 @@ namespace sanatoriy
             this.servicesLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
             this.servicesLabel.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.servicesLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.servicesLabel.Location = new System.Drawing.Point(130, 20);
+            this.servicesLabel.Location = new System.Drawing.Point(149, 27);
             this.servicesLabel.Name = "servicesLabel";
-            this.servicesLabel.Size = new System.Drawing.Size(140, 25);
+            this.servicesLabel.Size = new System.Drawing.Size(174, 32);
             this.servicesLabel.TabIndex = 33;
             this.servicesLabel.Text = "Ваши записи";
             // 
@@ -379,45 +371,47 @@ namespace sanatoriy
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
             this.panel4.Controls.Add(this.userService);
             this.panel4.Controls.Add(this.servicesLabel);
-            this.panel4.Location = new System.Drawing.Point(704, 161);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Location = new System.Drawing.Point(805, 215);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(405, 370);
+            this.panel4.Size = new System.Drawing.Size(463, 493);
             this.panel4.TabIndex = 34;
             // 
             // userService
             // 
             this.userService.AllowUserToAddRows = false;
+            this.userService.AllowUserToDeleteRows = false;
+            this.userService.AllowUserToResizeColumns = false;
+            this.userService.AllowUserToResizeRows = false;
             this.userService.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
             this.userService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.userService.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ButtomColumn});
-            this.userService.Location = new System.Drawing.Point(3, 67);
-            this.userService.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.userService.Location = new System.Drawing.Point(3, 89);
             this.userService.Name = "userService";
             this.userService.RowHeadersVisible = false;
             this.userService.RowHeadersWidth = 51;
             this.userService.RowTemplate.Height = 29;
-            this.userService.Size = new System.Drawing.Size(381, 400);
+            this.userService.Size = new System.Drawing.Size(435, 533);
             this.userService.TabIndex = 34;
             // 
             // ButtomColumn
             // 
+            this.ButtomColumn.MinimumWidth = 6;
             this.ButtomColumn.Name = "ButtomColumn";
+            this.ButtomColumn.Width = 125;
             // 
             // ProfileForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1120, 540);
+            this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cabinetLabel);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ProfileForm";
             this.Text = "UserCabinetForm";
             this.panel2.ResumeLayout(false);

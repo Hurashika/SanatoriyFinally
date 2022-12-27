@@ -48,18 +48,17 @@ namespace sanatoriy
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.SignLabel);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(788, 82);
+            this.panel1.Size = new System.Drawing.Size(901, 109);
             this.panel1.TabIndex = 11;
             // 
             // SignLabel
             // 
             this.SignLabel.AutoSize = true;
             this.SignLabel.Font = new System.Drawing.Font("Times New Roman", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.SignLabel.Location = new System.Drawing.Point(210, 24);
+            this.SignLabel.Location = new System.Drawing.Point(240, 32);
             this.SignLabel.Name = "SignLabel";
-            this.SignLabel.Size = new System.Drawing.Size(330, 36);
+            this.SignLabel.Size = new System.Drawing.Size(421, 46);
             this.SignLabel.TabIndex = 0;
             this.SignLabel.Text = "Список пользователей";
             // 
@@ -68,22 +67,24 @@ namespace sanatoriy
             this.usersViewPanel.AutoScroll = true;
             this.usersViewPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.usersViewPanel.Controls.Add(this.dataUser);
-            this.usersViewPanel.Location = new System.Drawing.Point(10, 87);
-            this.usersViewPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.usersViewPanel.Location = new System.Drawing.Point(11, 116);
             this.usersViewPanel.Name = "usersViewPanel";
-            this.usersViewPanel.Size = new System.Drawing.Size(767, 256);
+            this.usersViewPanel.Size = new System.Drawing.Size(876, 341);
             this.usersViewPanel.TabIndex = 12;
             // 
             // dataUser
             // 
+            this.dataUser.AllowUserToAddRows = false;
+            this.dataUser.AllowUserToDeleteRows = false;
+            this.dataUser.AllowUserToResizeColumns = false;
+            this.dataUser.AllowUserToResizeRows = false;
             this.dataUser.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
             this.dataUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataUser.Location = new System.Drawing.Point(3, 2);
-            this.dataUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataUser.Location = new System.Drawing.Point(3, 3);
             this.dataUser.Name = "dataUser";
             this.dataUser.RowHeadersWidth = 51;
             this.dataUser.RowTemplate.Height = 29;
-            this.dataUser.Size = new System.Drawing.Size(737, 158);
+            this.dataUser.Size = new System.Drawing.Size(868, 333);
             this.dataUser.TabIndex = 0;
             // 
             // roleLabel
@@ -92,9 +93,9 @@ namespace sanatoriy
             this.roleLabel.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.roleLabel.ForeColor = System.Drawing.Color.Transparent;
             this.roleLabel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.roleLabel.Location = new System.Drawing.Point(53, 364);
+            this.roleLabel.Location = new System.Drawing.Point(61, 485);
             this.roleLabel.Name = "roleLabel";
-            this.roleLabel.Size = new System.Drawing.Size(55, 22);
+            this.roleLabel.Size = new System.Drawing.Size(67, 26);
             this.roleLabel.TabIndex = 14;
             this.roleLabel.Text = "Роль:";
             this.roleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -102,11 +103,10 @@ namespace sanatoriy
             // roleBox
             // 
             this.roleBox.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.roleBox.Location = new System.Drawing.Point(164, 365);
-            this.roleBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roleBox.Location = new System.Drawing.Point(187, 487);
             this.roleBox.MaxLength = 20;
             this.roleBox.Name = "roleBox";
-            this.roleBox.Size = new System.Drawing.Size(176, 23);
+            this.roleBox.Size = new System.Drawing.Size(201, 27);
             this.roleBox.TabIndex = 15;
             this.roleBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -116,10 +116,9 @@ namespace sanatoriy
             this.changeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.changeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.changeButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.changeButton.Location = new System.Drawing.Point(513, 350);
-            this.changeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.changeButton.Location = new System.Drawing.Point(586, 467);
             this.changeButton.Name = "changeButton";
-            this.changeButton.Size = new System.Drawing.Size(191, 43);
+            this.changeButton.Size = new System.Drawing.Size(218, 57);
             this.changeButton.TabIndex = 28;
             this.changeButton.Text = "Изменить";
             this.changeButton.UseVisualStyleBackColor = false;
@@ -131,10 +130,9 @@ namespace sanatoriy
             this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeButton.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.closeButton.Location = new System.Drawing.Point(513, 398);
-            this.closeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.closeButton.Location = new System.Drawing.Point(586, 531);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(191, 43);
+            this.closeButton.Size = new System.Drawing.Size(218, 57);
             this.closeButton.TabIndex = 29;
             this.closeButton.Text = "Закрыть окно";
             this.closeButton.UseVisualStyleBackColor = false;
@@ -142,10 +140,10 @@ namespace sanatoriy
             // 
             // UsersListForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(190)))), ((int)(((byte)(245)))));
-            this.ClientSize = new System.Drawing.Size(788, 450);
+            this.ClientSize = new System.Drawing.Size(901, 600);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.changeButton);
             this.Controls.Add(this.roleBox);
@@ -153,7 +151,6 @@ namespace sanatoriy
             this.Controls.Add(this.usersViewPanel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UsersListForm";
             this.Text = "UsersListForm";
             this.panel1.ResumeLayout(false);
