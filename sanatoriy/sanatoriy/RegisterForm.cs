@@ -65,15 +65,13 @@ namespace sanatoriy
                 MessageBox.Show("Пароли не совпадают");
                 return;
             }
-            querystring = $"insert into users(login, pass, role, info) values('{loginUser}', '{passUser}', '{roleUser}', '{infoUser}')";
+            querystring = $"insert into users(login, pass, role, info, service) values('{loginUser}', '{passUser}', '{roleUser}', '{infoUser}', '{""}')";
             MySqlCommand insertcommand = new MySqlCommand(querystring, data.GetConnection());
             data.OpenConnection();
             if (insertcommand.ExecuteNonQuery() == 1)
             {
                 MessageBox.Show("Аккаунт успешно создан");
-                this.Hide();
-                LoginForm f = new LoginForm();
-                f.ShowDialog();
+                this.Close();
             }
         }
 
